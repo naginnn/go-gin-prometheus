@@ -32,7 +32,7 @@ package main
 //	view.RegisterExporter(exporter)
 //
 //	statsMux.Handle("/metrics", exporter)
-//
+
 //	originalHandler := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 //		w.Write([]byte("Hello, World!"))
 //	})
