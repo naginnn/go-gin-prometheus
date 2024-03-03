@@ -1,0 +1,15 @@
+version: '3'
+services:
+  server:
+    build: ./server
+    ports:
+      - "2223:2223"
+      - "57475:57475"
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+  prometheus:
+    build: ./prometheus
+    ports:
+      - "9090:9090"
